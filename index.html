@@ -53,37 +53,35 @@
 <!-- Add a Train -->
 	<div class = "container">
 		<div class="panel trainAdder hoverable">
-  	<!-- Default panel contents -->
-  	<div class="panel-heading">Add a Train</div>
-
-    <div class = "panel-body">
-  	<form>
-  		
-  		<div class="form-group">
-    		<label for="trainNameInput">Train Name</label>
-    		<input type="text" class="form-control" id="trainNameInput">
-  		</div>
-  		<div class="form-group">
-    		<label for="destinationInput">Destination</label>
-    		<input type="text" class="form-control" id="destinationInput">
-  		</div>
-  		<div class="form-group">
-    		<label for="firstTrainTimeInput">First Train Time (hh:mm - AM or PM)</label>
-    		<input type="time"  class="form-control" id="firstTrainTimeInput">
-  		</div>
-  		<div class="form-group">
-    		<label for="frequencyInput">Frequency (min)</label>
-    		<input type="number" class="form-control" id="frequencyInput">
-  		</div>
-  		<button class = "btn btn-lg" id = "submitButton">Submit</button>
-	
-  	</form>
-</div>
+  	 <!-- Default panel contents -->
+  	 <div class="panel-heading">Add a Train</div>
+      <div class = "panel-body">
+  	   <form>
+  		    <div class="form-group">
+    		    <label for="trainNameInput">Train Name</label>
+    		    <input type="text" class="form-control" id="trainNameInput">
+  		    </div>
+  		    <div class="form-group">
+    		    <label for="destinationInput">Destination</label>
+    		    <input type="text" class="form-control" id="destinationInput">
+  		    </div>
+  		    <div class="form-group">
+    		    <label for="firstTrainTimeInput">First Train Time (hh:mm - AM or PM)</label>
+    		    <input type="time"  class="form-control" id="firstTrainTimeInput">
+  		    </div>
+  		    <div class="form-group">
+    		    <label for="frequencyInput">Frequency (min)</label>
+    		    <input type="number" class="form-control" id="frequencyInput">
+  		    </div>
+  		    <button class = "btn btn-lg" id = "submitButton">Submit</button>
+	     </form>
+      </div>
   	</div>
 	</div>
-
+<!-- Link to firebase -->
 <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-<script type="text/javascript" src="assets/javascript/moment.js"></script>
+<!-- Link to JS file -->
+<script type="text/javascript" src="assets/javascript/trainScheduler.js"></script>
 
 </body>
 </html>
