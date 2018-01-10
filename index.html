@@ -5,18 +5,31 @@
 	<meta charset="utf-8">
   <!-- Link to Moment.js should go here -->
   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <!-- MD Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.css" rel="stylesheet">
+  <!-- Link to bootstrap -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Link to jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
+  <!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<div class="jumbotron">
-		<h1> Train Scheduler! </h1>
-	</div>
+  <div class = "container">
+    <div class="page-header z-depth-5 view overlay hm-brown-strong">
+      <div class="mask flex-center">
+        <h1 class = "white-text"> Train Scheduler! </h1>
+      </div>
+      
+    </div>
+  </div>
+	
 	
 <!-- Train Table Section -->
 	<div class = "container">
-	<div class="panel panel-default">
+	<div class="panel trainSchedule hoverable">
   <!-- Default panel contents -->
   <div class="panel-heading">Current Train Schedule</div>
 
@@ -39,10 +52,11 @@
 
 <!-- Add a Train -->
 	<div class = "container">
-		<div class="panel panel-default">
+		<div class="panel trainAdder hoverable">
   	<!-- Default panel contents -->
   	<div class="panel-heading">Add a Train</div>
 
+    <div class = "panel-body">
   	<form>
   		
   		<div class="form-group">
@@ -54,17 +68,17 @@
     		<input type="text" class="form-control" id="destinationInput">
   		</div>
   		<div class="form-group">
-    		<label for="firstTrainTimeInput">First Train Time (HH:mm - military time)</label>
+    		<label for="firstTrainTimeInput">First Train Time (hh:mm - AM or PM)</label>
     		<input type="time"  class="form-control" id="firstTrainTimeInput">
   		</div>
   		<div class="form-group">
     		<label for="frequencyInput">Frequency (min)</label>
     		<input type="number" class="form-control" id="frequencyInput">
   		</div>
-  		<button id = "submitButton">Submit</button>
+  		<button class = "btn btn-lg" id = "submitButton">Submit</button>
 	
   	</form>
-
+</div>
   	</div>
 	</div>
 

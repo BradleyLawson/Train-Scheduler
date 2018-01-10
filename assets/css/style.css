@@ -1,8 +1,57 @@
-.jumbotron{
+body{
+	font-family: 'Alice', serif;
+	background: #f6f1ed;
+}
+.page-header{
+	height: 30em;
 	background: url('../images/smallerTrain.jpg');
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
+	margin-bottom: 10%;
+	border-radius: 10px;
 }
 h1{
+	float: right;
+	padding: 5%;
+	font-size: 6em;
+	color: white;
+}
 
+.trainSchedule{
+	border-radius: 10px;
+	margin-bottom: 10%;
+}
+
+.trainAdder{
+	border-radius: 10px;
+	margin-bottom: 10%;
+}
+form{
+	padding: 2%;
+}
+table{
+	padding: 2%;
+}
+table thead th{
+	font-weight: bold;
+	font-size: 16px;
+}
+.panel-heading{
+	font-size: 16px;
+	font-weight: bold;
+	background: #6a5750;
+}
+form label{
+	font-weight: bold;
+	font-size: 16px;
+}
+.tableBody td{
+	font-size: 16px;
+}
+.panel{
+	background: #b5a397;
+	color: #f6f1ed;
+}
+button{
+	background: #30231d;
 }
